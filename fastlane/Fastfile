@@ -49,8 +49,7 @@ platform :ios do
       update_targets = ENV['DISABLE_TARGETS'].split(/,/)
     end
     
-    puts "#{ENV['PROJECT_PATH']}"
-    sh("ls")
+    puts ENV['CODE_SIGNING_IDENTITY']
     
     update_code_signing_settings(
       use_automatic_signing: false,
