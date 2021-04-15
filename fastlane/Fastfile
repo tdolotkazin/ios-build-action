@@ -48,7 +48,7 @@ platform :ios do
     elsif !ENV['DISABLE_TARGETS'].empty?
       update_targets = ENV['DISABLE_TARGETS'].split(/,/)
     end
-
+  puts "/#{ENV['PROJECT_PATH']}"
     update_code_signing_settings(
       use_automatic_signing: false,
       path: ENV['PROJECT_PATH'],
