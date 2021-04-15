@@ -50,7 +50,7 @@ platform :ios do
     end
     
     puts "#{ENV['PROJECT_PATH']}"
-    puts Dir.pwd
+    puts Dir.ls
     
     update_code_signing_settings(
       use_automatic_signing: false,
